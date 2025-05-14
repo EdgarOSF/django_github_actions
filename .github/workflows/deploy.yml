@@ -22,5 +22,8 @@ jobs:
     test-actions:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout
+              uses: actions/checkout@v4
+
             - name: actions
               run: ls -al
