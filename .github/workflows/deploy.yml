@@ -4,6 +4,12 @@ on:
     - push
 
 jobs:
+    set-up:
+        runs-on: ubuntu-latest
+        steps:
+            - name: hola mundo
+              run: echo "hola mundo 2"
+
     deploy:
         runs-on: ubuntu-latest
         steps:
