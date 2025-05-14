@@ -15,3 +15,4 @@ jobs:
         steps:
             - name: Hola mundo
               run: echo "hola mundo"
+        needs: set-up
