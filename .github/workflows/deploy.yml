@@ -16,5 +16,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Hola mundo
-              run: echo "hola mundo"
-        needs: set-up
+              run: echo "${{ secrets.name }}"
+        needs: set-up 
