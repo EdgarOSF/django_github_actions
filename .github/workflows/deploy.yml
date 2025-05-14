@@ -6,15 +6,21 @@ on:
             - main
 
 jobs:
-    set-up:
-        runs-on: ubuntu-latest
-        steps:
-            - name: hola mundo
-              run: echo "hola mundo 2"
+    # set-up:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - name: hola mundo
+    #           run: echo "hola mundo 2"
 
-    deploy:
+    # deploy:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - name: Hola mundo
+    #           run: echo "${{ secrets.name }}"
+    #     needs: set-up
+
+    test-actions:
         runs-on: ubuntu-latest
         steps:
-            - name: Hola mundo
-              run: echo "${{ secrets.name }}"
-        needs: set-up 
+            - name: actions
+              run: ls -al
